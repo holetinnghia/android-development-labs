@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.model;
 
 import java.io.Serializable;
 

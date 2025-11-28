@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.activity;
 
 import android.os.Bundle;
 import android.widget.Toast;
@@ -8,6 +8,11 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 import java.util.List;
+
+import ute.ltm.lab06.widget.LinePagerIndicatorDecoration;
+import ute.ltm.lab06.R;
+import ute.ltm.lab06.adapter.IconAdapter;
+import ute.ltm.lab06.model.IconModel;
 
 public class RecycleViewActivity extends AppCompatActivity {
     RecyclerView rcIcon;

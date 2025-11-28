@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.fragment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -8,10 +8,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-public class DeliveryFragment extends Fragment {
+import ute.ltm.lab06.R;
+
+public class NewOrderFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_delivery, container, false);
+        return inflater.inflate(R.layout.fragment_new_order, container, false);
     }
 }

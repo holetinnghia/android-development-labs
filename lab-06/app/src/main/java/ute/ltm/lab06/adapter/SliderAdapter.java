@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,9 @@ import androidx.annotation.NonNull;
 import androidx.viewpager.widget.PagerAdapter;
 import com.bumptech.glide.Glide;
 import java.util.List;
+
+import ute.ltm.lab06.R;
+import ute.ltm.lab06.model.ImagesSlider;
 
 public class SliderAdapter extends PagerAdapter {
     private Context context;

@@ -1,6 +1,5 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.activity;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -10,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.bumptech.glide.Glide;
 import java.util.ArrayList;
 import java.util.List;
+
+import ute.ltm.lab06.R;
 
 public class ViewFlipperActivity extends AppCompatActivity {
 

@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.widget;
 
 import android.content.res.Resources;
 import android.graphics.Canvas;

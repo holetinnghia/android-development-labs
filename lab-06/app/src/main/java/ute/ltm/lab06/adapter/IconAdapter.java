@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -10,6 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import java.util.List;
+
+import ute.ltm.lab06.R;
+import ute.ltm.lab06.model.IconModel;
 
 public class IconAdapter extends RecyclerView.Adapter<IconAdapter.IconHolder> {
     private Context context;

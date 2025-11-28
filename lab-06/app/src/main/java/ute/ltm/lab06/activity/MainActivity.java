@@ -1,10 +1,12 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+
+import ute.ltm.lab06.R;
 
 public class MainActivity extends AppCompatActivity {
 

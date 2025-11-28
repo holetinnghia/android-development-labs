@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.model;
 
 public class ImagesSlider {
     private int id;

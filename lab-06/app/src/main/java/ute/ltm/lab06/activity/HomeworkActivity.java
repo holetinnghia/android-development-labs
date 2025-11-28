@@ -1,4 +1,4 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.activity;
 
 import android.os.Bundle;
 
@@ -13,6 +13,12 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import ute.ltm.lab06.model.MessageModel;
+import ute.ltm.lab06.R;
+import ute.ltm.lab06.adapter.SliderAdapter;
+import ute.ltm.lab06.api.APIService;
+import ute.ltm.lab06.model.ImagesSlider;
+
 public class HomeworkActivity extends AppCompatActivity {
     ViewPager viewPager;
     CircleIndicator circleIndicator;

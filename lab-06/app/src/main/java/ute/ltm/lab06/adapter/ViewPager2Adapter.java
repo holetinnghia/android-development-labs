@@ -1,9 +1,13 @@
-package ute.ltm.lab06;
+package ute.ltm.lab06.adapter;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentActivity;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import ute.ltm.lab06.fragment.NewOrderFragment;
+import ute.ltm.lab06.fragment.PickupFragment;
+import ute.ltm.lab06.fragment.DeliveryFragment;
 
 public class ViewPager2Adapter extends FragmentStateAdapter {
 
