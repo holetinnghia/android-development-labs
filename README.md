@@ -1,7 +1,7 @@
 # Native Android Development Labs 📱
 
-**University:** Ho Chi Minh City University of Technology and Education (HCMUTE)\n
-**Faculty:** Information Technology\n
+**University:** Ho Chi Minh City University of Technology and Education (HCMUTE)\
+**Faculty:** Information Technology\
 **Student:** Ho Le Tin Nghia
 
 ---
