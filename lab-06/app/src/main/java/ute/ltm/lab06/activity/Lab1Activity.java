@@ -1,8 +1,12 @@
 package ute.ltm.lab06.activity;
 
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
 import ute.ltm.lab06.R;
@@ -46,6 +50,16 @@ public class Lab1Activity extends AppCompatActivity {
                 if (tab != null) {
                     tab.select();
                 }
+            }
+        });
+
+        FloatingActionButton fab = findViewById(R.id.fabAction);
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                com.google.android.material.snackbar.Snackbar.make(view, "Bạn vừa bấm vào nút thư!", com.google.android.material.snackbar.Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
             }
         });
 
