@@ -28,11 +28,11 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".activity.Lab1Activity" />
+        <activity android:name=".activity.ViewPagerActivity" />
 
-        <activity android:name=".activity.HomeworkActivity" />
+        <activity android:name=".activity.SliderAPIActivity" />
 
-        <activity android:name=".activity.RecycleViewActivity" />
+        <activity android:name=".activity.RecyclerSearchActivity" />
 
         <activity android:name=".activity.ViewFlipperActivity" />
     </application>

@@ -12,7 +12,7 @@ import com.google.android.material.tabs.TabLayout;
 import ute.ltm.lab06.R;
 import ute.ltm.lab06.adapter.ViewPager2Adapter;
 
-public class Lab1Activity extends AppCompatActivity {
+public class ViewPagerActivity extends AppCompatActivity {
 
     ViewPager2 viewPager2;
     TabLayout tabLayout;

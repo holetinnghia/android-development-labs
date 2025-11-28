@@ -19,25 +19,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Bài 1: Fragment &amp; ViewPager2" />
-
-    <Button
-        android:id="@+id/btnViewFlipper"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Bài 2a: ViewFlipper (Cơ bản)" />
+        android:text="Bài 1: ViewPager" />
 
     <Button
         android:id="@+id/btnBai2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
-        android:text="Bài 2: Slider API (Retrofit)" />
+        android:text="Bài 2: Slider API" />
+
+    <Button
+        android:id="@+id/btnViewFlipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Bài 3: ViewFlipper" />
 
     <Button
         android:id="@+id/btnBai3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Bài 3: RecyclerView &amp; Search" />
+        android:text="Bài 4: RecyclerView Search" />
 
 </LinearLayout>

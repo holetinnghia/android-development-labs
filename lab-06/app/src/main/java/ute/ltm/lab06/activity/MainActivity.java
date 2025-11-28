@@ -24,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         btnBai1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Lab1Activity.class);
+                Intent intent = new Intent(MainActivity.this, ViewPagerActivity.class);
                 startActivity(intent);
             }
         });
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         btnBai2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, HomeworkActivity.class);
+                Intent intent = new Intent(MainActivity.this, SliderAPIActivity.class);
                 startActivity(intent);
             }
         });
@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
         btnBai3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, RecycleViewActivity.class);
+                Intent intent = new Intent(MainActivity.this, RecyclerSearchActivity.class);
                 startActivity(intent);
             }
         });

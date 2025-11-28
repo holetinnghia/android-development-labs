@@ -14,7 +14,7 @@ import ute.ltm.lab06.R;
 import ute.ltm.lab06.adapter.IconAdapter;
 import ute.ltm.lab06.model.IconModel;
 
-public class RecycleViewActivity extends AppCompatActivity {
+public class RecyclerSearchActivity extends AppCompatActivity {
     RecyclerView rcIcon;
     IconAdapter iconAdapter;
     List<IconModel> arrayList1;

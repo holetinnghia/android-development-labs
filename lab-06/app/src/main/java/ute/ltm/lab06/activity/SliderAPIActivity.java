@@ -19,7 +19,7 @@ import ute.ltm.lab06.adapter.SliderAdapter;
 import ute.ltm.lab06.api.APIService;
 import ute.ltm.lab06.model.ImagesSlider;
 
-public class HomeworkActivity extends AppCompatActivity {
+public class SliderAPIActivity extends AppCompatActivity {
     ViewPager viewPager;
     CircleIndicator circleIndicator;
 
@@ -48,7 +48,7 @@ public class HomeworkActivity extends AppCompatActivity {
                 if (response.isSuccessful() && response.body() != null) {
                     List<ImagesSlider> list = response.body().getResult();
 
-                    SliderAdapter adapter = new SliderAdapter(HomeworkActivity.this, list);
+                    SliderAdapter adapter = new SliderAdapter(SliderAPIActivity.this, list);
                     viewPager.setAdapter(adapter);
                     circleIndicator.setViewPager(viewPager);
                 }
