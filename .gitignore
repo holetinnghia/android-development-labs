@@ -1,0 +1,32 @@
+# --- Cấu hình chung cho JetBrains (IntelliJ, WebStorm, Android Studio) ---
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+cmake-build-*/
+
+# --- Dành cho Mac (Mày đang xài Mac nên cái này quan trọng) ---
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# --- Dành cho Web (NodeJS) ---
+node_modules/
+npm-debug.log
+yarn-error.log
+.env
+dist/
+build/
+
+# --- Dành cho Android (Gradle) ---
+.gradle/
+local.properties
+.cxx/
+build/
+captures/
+.externalNativeBuild/
+
+# --- Các file tạm, log ---
+*.log
+*.tmp
