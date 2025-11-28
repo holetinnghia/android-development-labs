@@ -10,7 +10,7 @@
 This repository contains laboratory assignments for Native Android Development (Mobile Programming), focusing on UI design, local data persistence, and asynchronous network operations.
 
 ## 🛠️ Technology Stack
-* **Language:** Kotlin / Java
+* **Language:** Java
 * **Platform:** Android SDK
 * **Backend Integration:** Volley, Retrofit2, JSON Parsing.
 * **Local Persistence:** SQLite, Shared Preferences.
