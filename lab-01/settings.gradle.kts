@@ -19,5 +19,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "LTM-BT01"
+rootProject.name = "lab-01"
 include(":app")
