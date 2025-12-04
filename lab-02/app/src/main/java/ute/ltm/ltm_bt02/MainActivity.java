@@ -1,6 +1,7 @@
 package ute.ltm.ltm_bt02;
 
 import android.app.Dialog;
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.Menu;
