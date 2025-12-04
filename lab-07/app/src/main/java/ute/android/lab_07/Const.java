@@ -1,0 +1,6 @@
+package ute.android.lab_07;
+
+public class Const {
+    public static final String MY_USERNAME = "username";
+    public static final String MY_IMAGES = "avatar";
+}
