@@ -1,12 +1,12 @@
 package ute.android.lab_08;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
-import androidx.appcompat.app.AppCompatActivity;
 
-import ute.android.lab_08.R;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -27,6 +27,10 @@ public class MainActivity extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
         webView.loadUrl("file:///android_asset/index.html");
+
+        findViewById(R.id.fabUpload).setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, UploadActivity.class));
+        });
     }
 
     @Override
