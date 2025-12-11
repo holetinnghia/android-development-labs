@@ -7,5 +7,7 @@
 | **Lab 05**  | **Networking & Async**      | [View](./lab-05)       |
 | **Lab 06**  | **UI Containers**           | [View](./lab-06)       |
 | **Lab 07**  | **Up load images & Socket** | [View](./lab-07)       |
+| **Lab 08** | **Upload videos & Cloud Storage**  | [View](./lab-08) |
+
 ---
 *Created by Nghai - 2025*
