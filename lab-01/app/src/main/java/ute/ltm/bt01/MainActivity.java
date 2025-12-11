@@ -28,7 +28,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Hide the status bar and navigation bar
         WindowCompat.setDecorFitsSystemWindows(getWindow(), false);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.R) {
             final WindowInsetsController controller = getWindow().getInsetsController();
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
                 controller.setSystemBarsBehavior(WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE);
             }
         } else {
-            //noinspection deprecation
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY
                             | View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -47,16 +45,13 @@ public class MainActivity extends AppCompatActivity {
                             | View.SYSTEM_UI_FLAG_FULLSCREEN);
         }
 
-        // Views for number sorter and string reverser
         ConstraintLayout numberSorterLayout = findViewById(R.id.number_sorter_layout);
         ConstraintLayout stringReverserLayout = findViewById(R.id.string_reverser_layout);
 
-        // Buttons for navigation
         Button btnShowStudent = findViewById(R.id.btn_show_student);
         Button btnShowNumbers = findViewById(R.id.btn_show_numbers);
         Button btnShowString = findViewById(R.id.btn_show_string);
 
-        // --- Requirement 2: Sort odd and even numbers ---
         EditText etNumbers = findViewById(R.id.et_numbers);
         Button btnSortNumbers = findViewById(R.id.btn_sort_numbers);
 
@@ -81,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
 
-            // Format the output to be a comma-separated string
             String evenResult = evenNumbers.stream().map(String::valueOf).collect(Collectors.joining(", "));
             String oddResult = oddNumbers.stream().map(String::valueOf).collect(Collectors.joining(", "));
 
@@ -90,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, "Đã lọc số. Vui lòng kiểm tra Logcat.", Toast.LENGTH_SHORT).show();
         });
 
-        // --- Requirement 3: Reverse and uppercase a string ---
         EditText etInput = findViewById(R.id.et_input);
         Button btnReverse = findViewById(R.id.btn_reverse);
         TextView tvResult = findViewById(R.id.tv_result);
@@ -105,7 +98,6 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(MainActivity.this, reversedString, Toast.LENGTH_SHORT).show();
         });
 
-        // --- Navigation Logic ---
         btnShowStudent.setOnClickListener(v -> {
             numberSorterLayout.setVisibility(View.GONE);
             stringReverserLayout.setVisibility(View.GONE);
@@ -121,7 +113,6 @@ public class MainActivity extends AppCompatActivity {
             stringReverserLayout.setVisibility(View.VISIBLE);
         });
 
-        // Set initial state
         btnShowStudent.performClick();
     }
 }
