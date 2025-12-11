@@ -1,15 +1,37 @@
-*.iml
-.gradle
-/local.properties
-/.idea/caches
-/.idea/libraries
-/.idea/modules.xml
-/.idea/workspace.xml
-/.idea/navEditor.xml
-/.idea/assetWizardSettings.xml
-.DS_Store
-/build
-/captures
-.externalNativeBuild
-.cxx
+# Built application files
+*.apk
+*.aab
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Built native files
+**/build/
+
+# Gradle files
+.gradle/
+build/
+
+# Local configuration file (sdk path, etc)
 local.properties
+
+# Log Files
+*.log
+
+# Android Studio generated files and folders
+.idea/
+.DS_Store
+captures/
+*.iml
+.cxx/
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (if it contains sensitive information)
+# google-services.json
+
+# kotlin
+*.kts
+/hs_err_pid*
