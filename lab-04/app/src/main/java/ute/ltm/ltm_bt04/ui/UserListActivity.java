@@ -38,10 +38,9 @@ public class UserListActivity extends AppCompatActivity implements UserAdapter.O
     }
 
     private void loadUsers() {
-        // Add some sample users
-        userList.add(new User("John", "Doe"));
-        userList.add(new User("Jane", "Smith"));
-        userList.add(new User("Peter", "Jones"));
+        userList.add(new User("Nguyen", "Ho"));
+        userList.add(new User("Ho", "Nghia"));
+        userList.add(new User("Tran", "Thi"));
         userAdapter.notifyDataSetChanged();
     }
 

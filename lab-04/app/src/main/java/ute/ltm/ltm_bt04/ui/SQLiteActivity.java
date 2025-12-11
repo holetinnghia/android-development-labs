@@ -55,7 +55,7 @@ public class SQLiteActivity extends AppCompatActivity {
         fabAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                DialogThem(); // Gọi hàm hiện Dialog
+                DialogThem();
             }
         });
     }
@@ -96,7 +96,7 @@ public class SQLiteActivity extends AppCompatActivity {
         dialog.setContentView(R.layout.dialog_notes);
 
         TextView txtTitle = dialog.findViewById(R.id.txtTitle);
-        txtTitle.setText("THÊM GHI CHÚ"); // Tái sử dụng layout
+        txtTitle.setText("THÊM GHI CHÚ");
 
         EditText editText = dialog.findViewById(R.id.editTextNotes);
         Button btnThem = dialog.findViewById(R.id.buttonXacNhan);

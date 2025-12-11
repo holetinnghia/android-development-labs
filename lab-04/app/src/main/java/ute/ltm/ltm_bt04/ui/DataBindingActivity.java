@@ -28,15 +28,12 @@ public class DataBindingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Thiết lập binding thay cho setContentView thông thường
         binding = DataBindingUtil.setContentView(this, R.layout.activity_data_binding);
 
-        // Đặt Toolbar tùy chỉnh làm ActionBar
         setSupportActionBar(binding.toolbar);
 
-        // --- DEMO 1: Cập nhật dữ liệu đơn ---
         userDemo = new User("Nguyen", "Van A");
-        binding.setCurrentUser(userDemo); // Gán biến user vào layout
+        binding.setCurrentUser(userDemo);
 
         binding.btnChangeData.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +44,6 @@ public class DataBindingActivity extends AppCompatActivity {
             }
         });
 
-        // --- DEMO 2: RecyclerView ---
         userList = new ArrayList<>();
         userList.add(new User("Le", "Van C"));
         userList.add(new User("Pham", "Van D"));
