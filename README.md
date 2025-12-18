@@ -9,6 +9,8 @@
 | **Lab 07**  | **Up load images & Socket**       | [View](./lab-07) |
 | **Lab 08** | **Upload videos & Cloud Storage** | [View](./lab-08) |
 | **Lab 09** | **SocketIO & Real-time chat**     | [View](./lab-09) |
+| **Lab 10** | **Kotlin Basic**                  | [View](./lab-10) |
+
 
 ---
 *Created by Nghai - 2025*
