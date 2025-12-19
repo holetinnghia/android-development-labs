@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="task"
+            type="ute.android.lab_11.Task" />
+        <variable
+            name="viewModel"
+            type="ute.android.lab_11.ToDoViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cbCompleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="@{task.completed}"
+            android:onClick="@{(v) -> viewModel.updateTaskStatus(task, ((android.widget.CompoundButton)v).isChecked())}" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@{task.title}"
+            android:textSize="16sp"
+            android:paddingStart="8dp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/ic_menu_delete"
+            android:background="?attr/selectableItemBackground"
+            android:onClick="@{() -> viewModel.deleteTask(task)}" />
+    </LinearLayout>
+</layout>
